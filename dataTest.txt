@@ -12,4 +12,47 @@
       "programme": "Informatyka"
     }
   ]
+}{
+  "id": "36293",
+  "firstName": "Jakub",
+  "lastName": "Nowak",
+  "staffStatus": 0,
+  "studentStatus": 1,
+  "email": "s022222@student.tu.kielce.pl",
+  "studentNumber": "22222",
+  "studentProgrammes": [
+    {
+      "id": "1",
+      "programme": "Informatyka"
+    }
+  ]
+}{
+  "id": "36293",
+  "firstName": "Jakub",
+  "lastName": "Nowak",
+  "staffStatus": 0,
+  "studentStatus": 1,
+  "email": "s022222@student.tu.kielce.pl",
+  "studentNumber": "22222",
+  "studentProgrammes": [
+    {
+      "id": "1",
+      "programme": "Informatyka"
+    }
+  ]
+}{
+  "id": "36293",
+  "firstName": "Jakub",
+  "lastName": "Nowak",
+  "staffStatus": 0,
+  "studentStatus": 1,
+  "email": "s022222@student.tu.kielce.pl",
+  "studentNumber": "22222",
+  "studentProgrammes": [
+    {
+      "id": "1",
+      "programme": "Informatyka"
+    }
+  ]
 }
+

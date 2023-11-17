@@ -18,18 +18,22 @@ async function fetchDataFromUserAPI(url, emailUser) {
         return null;
     }
 }
+
+function appendDataToFile(data, filepath) {
+    const formattedData = JSON.stringify(data, null, 2) + '\n\n';
+    fs.appendFileSync(filepath, formattedData, 'utf8');
+}
+
+
 const emailUser = 's022222@student.tu.kielce.pl';
 const apiURL = `http://hackathon23-mockapi-env.eba-qfrnjqkt.eu-central-1.elasticbeanstalk.com/user/${emailUser}`;
 
-
-function saveDataToFile(data, filepath) {
-    fs.writeFileSync(filepath, JSON.stringify(data, null, 2)); 
-}
-
-fetchDataFromUserAPI(apiURL)
+fetchDataFromUserAPI(apiURL, emailUser)
     .then(data => {
         if (data) {
-            saveDataToFile(data, 'dataTest.txt'); 
+            appendDataToFile(data, 'dataTest.txt'); 
             console.log('Dane zostały zapisane.');
         }
     });
+
+    module.exports = fetchDataFromUserAPI;
