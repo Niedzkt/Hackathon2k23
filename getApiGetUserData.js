@@ -8,7 +8,7 @@ s011111@student.tu.kielce.pl
 const axios = require('axios');
 const fs = require('fs');
 
-async function fetchDataFromUserAPI(url, emailUser) {
+ async function fetchDataFromUserAPI(url, emailUser) {
     try {
         const response = await axios.get(url);
         console.log(response.data);

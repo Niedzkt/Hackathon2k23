@@ -1,13 +1,20 @@
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib';
 import fs from 'fs-extra';
-import fetch from 'node-fetch';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import fontkit from '@pdf-lib/fontkit'
+import fetchDataFromUserAPI from './getApiGetUserData.js';
 async function createPdf() {
   const pdfDoc = await PDFDocument.create();
   //const fontBytes = await fetch('times-new-roman.ttf').then((res) => res.arrayBuffer());
 //const customFont = await pdfDoc.embedFont(fontBytes);
+
+const emailUser = "s022222@student.tu.kielce.pl";
+fetchDataFromUserAPI('s022222@student.tu.kielce.pl',`http://hackathon23-mockapi-env.eba-qfrnjqkt.eu-central-1.elasticbeanstalk.com/user/${emailUser}`)
+
+
+
+
 
 
 
@@ -23,10 +30,10 @@ const fontPath = 'times-new-roman.ttf'; // Podaj pełną ścieżkę do pliku fon
   const fontSize = 30;
   
 //variables into pdf 
+  const index_nr="";
+  const secondname="";
+  const faculty="";
 
-  const secondname;
-  const faculty;
-  const 
 
 
 
@@ -48,7 +55,7 @@ o nr KRS ………….…, NIP ……………………, Regon ……………�
 Zakładem lub Zakładem Pracy, reprezentowanym przez ……………………………………
 ………………………………………………………………………………………………….
 § 1. Uczelnia kieruje studenta ${name},
-nr albumu ………………… do Zakładu w celu odbycia przez niego praktyki studenckiej
+nr albumu ${index_nr} do Zakładu w celu odbycia przez niego praktyki studenckiej
 w okresie od ……………… do ….………………
 § 2. Zakład zobowiązuje się do:
 1) zapewnienia odpowiednich stanowisk pracy, pomieszczeń, warsztatów, urządzeń, narzędzi
