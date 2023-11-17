@@ -1,5 +1,6 @@
 //http://hackathon23-mockapi-env.eba-qfrnjqkt.eu-central-1.elasticbeanstalk.com/all-emails/
 
+
 const axios = require('axios');
 
 async function fetchDataFromAPI(url) {
