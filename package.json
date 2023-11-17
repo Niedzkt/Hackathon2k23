@@ -1,0 +1,22 @@
+{
+  "name": "hackathonproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niedzkt/silevis-psk-23-Backend-ZDC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niedzkt/silevis-psk-23-Backend-ZDC/issues"
+  },
+  "homepage": "https://github.com/Niedzkt/silevis-psk-23-Backend-ZDC#readme",
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
+}
